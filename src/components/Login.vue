@@ -69,7 +69,6 @@ export default {
         if (valid) {
           this.$router.push('/')
           sessionStorage.setItem("User", valid);
-          this.$Message.success("Success!");
           this.loading = false;
         } else {
           this.$Message.error("Fail!");
