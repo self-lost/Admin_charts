@@ -28,13 +28,11 @@ export default {
             cancelText: 'Cancel',
             onOk: () => {
               this.loading = false;
-              this.$Message.success('退出成功');
               this.$router.push('/login')
               sessionStorage.removeItem('User');
             },
             onCancel: () => {
               this.loading = false;
-              this.$Message.info('取消退出');
             }
           })
         }
